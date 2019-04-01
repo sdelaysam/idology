@@ -1,5 +1,8 @@
 apply plugin: 'com.android.library'
 
+apply plugin: 'com.github.dcendents.android-maven'
+group='com.github.sdelaysam.idology'
+
 android {
     compileSdkVersion 28
 
@@ -26,8 +29,8 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    api 'com.madgag.spongycastle:pkix:1.54.0.0'
-    api 'com.madgag.spongycastle:pg:1.54.0.0'
+    implementation 'com.madgag.spongycastle:pkix:1.54.0.0'
+    implementation 'com.madgag.spongycastle:pg:1.54.0.0'
     api project(":utilities")
     api project(":openCVLibrary310")
     api project(":cameralibrary")

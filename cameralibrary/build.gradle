@@ -1,2 +1,5 @@
+apply plugin: 'com.github.dcendents.android-maven'
+group='com.github.sdelaysam.idology'
+
 configurations.maybeCreate("default")
 artifacts.add("default", file('cameralibrary.aar'))
